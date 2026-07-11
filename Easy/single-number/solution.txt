@@ -1,0 +1,14 @@
+// Single Number
+// https://leetcode.com/problems/single-number/
+// Solved: 2026-07-11T11:33:36.334Z | Attempts before success: 0
+
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+        int ans=0;
+        for(int num:nums){
+            ans = ans^num;
+        }
+        return ans;
+    }
+};
