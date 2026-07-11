@@ -1,0 +1,25 @@
+// Longest Subarray with Sum K | Practice
+// https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1
+// Solved: 2026-07-11T16:46:04.861Z | Attempts before success: 5
+
+class Solution {
+  public:
+    int longestSubarray(vector<int>& arr, int k) {
+        int prefixS=0,maxL=0;
+        int n=arr.size();
+        unordered_map<int,int>mp;
+        for(int i=0;i<n;i++){
+            prefixS+=arr[i];
+            if(prefixS == k){
+                maxL = i+1;
+            }
+            if(mp.find(prefixS - k) != mp.end()){
+                maxL = max(maxL, i-mp[prefixS-k]);
+            }
+            if(mp.find(prefixS) == mp.end()){
+                mp[prefixS] = i;
+            }
+        }
+        return maxL;
+    }
+};
