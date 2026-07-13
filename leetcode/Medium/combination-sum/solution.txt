@@ -1,0 +1,23 @@
+// Combination Sum
+// https://leetcode.com/problems/combination-sum/
+// Solved: 2026-07-13T11:49:22.061Z | Attempts before success: 102
+
+                res.push_back(temp);
+            }
+            return;
+        }
+        if(arr[idx] <= target){
+            temp.push_back(arr[idx]);
+            findComb(idx,target-arr[idx],arr,res,temp);
+            temp.pop_back();
+        }
+        findComb(idx+1,target,arr,res,temp);
+    }
+    vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
+        vector<vector<int>>res;
+        vector<int>temp;
+            if(target == 0){
+        if(idx == arr.size()){
+    void findComb(int idx,int target,vector<int>&arr,vector<vector<int>>&res,vector<int>&temp){
+public:
+class Solution {
