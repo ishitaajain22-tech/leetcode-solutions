@@ -1,0 +1,22 @@
+// Count Good Numbers
+// https://leetcode.com/problems/count-good-numbers/
+// Solved: 2026-07-13T10:40:18.751Z | Attempts before success: 62
+
+
+        long long half = findPower(a, b / 2);
+        long long result = (half * half) % M;
+
+        if (b % 2) {
+            result = (result * a) % M;
+        }
+
+        return result;
+    }
+
+    int countGoodNumbers(long long n) {
+        long long even = findPower(5, (n + 1) / 2);
+        long long odd = findPower(4, n / 2);
+
+        return (even * odd) % M;
+    }
+};
