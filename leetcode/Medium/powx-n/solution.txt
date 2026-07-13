@@ -1,0 +1,5 @@
+// Pow(x, n)
+// https://leetcode.com/problems/powx-n/
+// Solved: 2026-07-13T02:41:50.852Z | Attempts before success: 0
+
+c
