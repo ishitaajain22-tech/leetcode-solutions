@@ -1,0 +1,19 @@
+// String to Integer (atoi)
+// https://leetcode.com/problems/string-to-integer-atoi/
+// Solved: 2026-07-13T08:40:06.213Z | Attempts before success: 84
+
+        }else if(s[i] == '+'){
+            i++;
+        }
+        while(i<s.size() && isdigit(s[i])){
+            res=res*10 + (s[i] - '0');
+
+            //handling overflow;
+            if(sign*res < INT_MIN) return INT_MIN;
+            if(sign*res > INT_MAX) return INT_MAX; //agar undefined jitna badha number h, we return the last possible value 
+            our editor understands
+            i++;
+        }
+        return (int)sign*res;
+    }
+};
