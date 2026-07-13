@@ -1,0 +1,16 @@
+// Maximum Difference Between Increasing Elements
+// https://leetcode.com/problems/maximum-difference-between-increasing-elements/
+// Solved: 2026-07-12T16:54:15.919Z | Attempts before success: 915
+
+                minVal = nums[i];
+            }
+                maxDiff = max(maxDiff, nums[i] - minVal);
+            } else {
+            if (nums[i] > minVal) {
+        for (int i = 1; i < nums.size(); ++i) {
+
+        int maxDiff = -1;
+        int minVal = nums[0];
+    int maximumDifference(vector<int>& nums) {
+public:
+class Solution {
