@@ -1,0 +1,22 @@
+// Generate Parentheses
+// https://leetcode.com/problems/generate-parentheses/
+// Solved: 2026-07-13T12:38:43.620Z | Attempts before success: 255
+
+            string op1=op;
+            subStr(open-1,close,op1,res);
+        }
+    }
+    vector<string> generateParenthesis(int n) {
+            op1.push_back('(');
+        if(close>open){
+            string op2 = op;
+        }
+            op2.push_back(')');
+            subStr(open,close-1,op2,res);
+        vector<string>res;
+        string op="";
+        int open =n,close=n;
+        subStr(open,close,op,res);
+        return res;
+    }
+};
