@@ -1,0 +1,5 @@
+// Array Partition
+// https://leetcode.com/problems/array-partition/
+// Solved: 2026-07-14T10:53:28.811Z | Attempts before success: 0
+
+c
