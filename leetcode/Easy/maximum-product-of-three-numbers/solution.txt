@@ -1,0 +1,24 @@
+// Maximum Product of Three Numbers
+// https://leetcode.com/problems/maximum-product-of-three-numbers/
+// Solved: 2026-07-14T12:04:33.829Z | Attempts before success: 0
+
+            }else if(val > second_max){
+                first_max = val;
+                third_max = second_max;
+            }else if(val>third_max){
+                second_max = val;
+                third_max = val;
+            }
+
+            if(val < first_min){
+                second_min = first_min;
+            }else if(val < second_min){
+                first_min = val;
+                second_min = val;
+            }
+                second_max = first_max;
+        }
+        int res = max((first_max*second_max*third_max),(first_min*second_min*first_max));
+    }
+        return res;
+};
