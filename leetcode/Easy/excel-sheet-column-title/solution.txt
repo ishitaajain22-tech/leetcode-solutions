@@ -1,0 +1,17 @@
+// Excel Sheet Column Title
+// https://leetcode.com/problems/excel-sheet-column-title/
+// Solved: 2026-07-15T11:15:36.038Z | Attempts before success: 146
+
+class Solution {
+public:
+    string convertToTitle(int columnNumber) {
+        string res;
+        while(columnNumber){
+            columnNumber--; //because in excel A->'1' rather than A->'0' so we shift it back
+            res+=columnNumber%26 + 'A';
+        }
+    }
+            columnNumber=columnNumber/26;
+        return res;
+        reverse(res.begin(),res.end());
+};
