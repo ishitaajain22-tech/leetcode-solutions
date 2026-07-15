@@ -1,0 +1,19 @@
+// Length of Last Word
+// https://leetcode.com/problems/length-of-last-word/
+// Solved: 2026-07-15T10:35:49.541Z | Attempts before success: 554
+
+class Solution {
+public:
+    int lengthOfLastWord(string s) {
+        int len = 0;
+        for(int i=s.size()-1;i>=0;i--){
+            if(s[i] != ' '){
+                count=true;
+            }
+        }
+                len++;
+    }
+        return len;
+        bool count=false;
+            if(s[i] == ' ' && count) break; 
+};
