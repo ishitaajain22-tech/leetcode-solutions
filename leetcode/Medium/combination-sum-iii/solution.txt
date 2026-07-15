@@ -1,0 +1,23 @@
+// Combination Sum III
+// https://leetcode.com/problems/combination-sum-iii/
+// Solved: 2026-07-14T12:59:30.641Z | Attempts before success: 197
+
+    void solve(int k,int idx, int target,vector<vector<int>>&res,vector<int>&temp){
+        if(target == 0 && k==0){
+    }
+    vector<vector<int>> combinationSum3(int k, int n) {
+        //mtlb no duplicates allowed
+        vector<vector<int>>res;
+        vector<int>temp;
+            res.push_back(temp);
+        }
+            return;
+        for(int i=idx;i<=9;i++){
+            if(i>target || k<=0) break;
+        }
+    }
+            temp.push_back(i);
+            solve(k-1,i+1,target-i,res,temp);
+            temp.pop_back();
+        return res;
+        solve(k,1,n,res,temp);
