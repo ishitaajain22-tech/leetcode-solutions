@@ -1,0 +1,5 @@
+// Isomorphic Strings
+// https://leetcode.com/problems/isomorphic-strings/
+// Solved: 2026-07-15T20:13:55.776Z | Attempts before success: 0
+
+c
