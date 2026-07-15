@@ -1,0 +1,11 @@
+// Longest Substring Without Repeating Characters
+// https://leetcode.com/problems/longest-substring-without-repeating-characters/
+// Solved: 2026-07-15T11:21:01.138Z | Attempts before success: 0
+
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        unordered_map<char,int>mpl
+    }
+        
+};
