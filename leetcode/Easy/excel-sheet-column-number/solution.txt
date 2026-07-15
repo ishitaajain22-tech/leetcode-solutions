@@ -1,0 +1,14 @@
+// Excel Sheet Column Number
+// https://leetcode.com/problems/excel-sheet-column-number/
+// Solved: 2026-07-15T19:53:49.025Z | Attempts before success: 0
+
+class Solution {
+public:
+    int titleToNumber(string columnTitle) {
+        long long ans=0;
+        for(char ch:columnTitle){
+            ans = ans*26+(ch-'A'+1);
+        }
+        return (int)ans;
+    }
+};
