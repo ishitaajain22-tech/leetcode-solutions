@@ -1,0 +1,15 @@
+// Sort Colors
+// https://leetcode.com/problems/sort-colors/
+// Solved: 2026-07-12T10:15:40.405Z | Attempts before success: 0
+
+class Solution {
+public:
+    void sortColors(vector<int>& nums) {
+        int low=0,mid=0,high=nums.size()-1;
+        while(mid<=high){
+            if(nums[mid] == 0) swap(nums[mid++],nums[low++]);
+            else if(nums[mid] == 1) mid++;
+            else if(nums[mid] == 2) swap(nums[mid],nums[high--]);
+        }
+    }
+};
