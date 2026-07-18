@@ -1,0 +1,16 @@
+// Integer to Roman
+// https://leetcode.com/problems/integer-to-roman/
+// Solved: 2026-07-17T07:51:12.796Z | Attempts before success: 42
+
+        string str;
+        while(num>0){
+            if(num>=n[i]){
+                str+=s[i];
+                num-=n[i];
+            }else{
+                i++;
+            }
+        }
+        int i=0;
+        vector<string>s = {"M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"};
+        vector<int>n={1000,900,500,400,100,90,50,40,10,9,5,4,1};
