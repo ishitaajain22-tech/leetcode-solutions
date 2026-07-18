@@ -1,0 +1,5 @@
+// Remove All Adjacent Duplicates In String
+// https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
+// Solved: 2026-07-18T09:31:42.038Z | Attempts before success: 368
+
+c
