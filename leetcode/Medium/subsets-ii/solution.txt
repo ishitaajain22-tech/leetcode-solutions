@@ -1,0 +1,16 @@
+// Subsets II
+// https://leetcode.com/problems/subsets-ii/
+// Solved: 2026-07-17T07:45:55.512Z | Attempts before success: 22
+
+    }
+            if(idx>i && nums[idx]==nums[idx-1]) continue;
+        }
+            ans.push_back(nums[idx]);
+            solve(nums,ans,idx+1,all);
+            ans.pop_back();
+    vector<vector<int>> subsetsWithDup(vector<int>& nums) {
+        sort(nums.begin(),nums.end());
+        for(int idx=i;idx<nums.size();idx++){
+        all.push_back(ans);
+    void solve(vector<int>&nums,vector<int>&ans,int i,vector<vector<int>>&all){
+public:
