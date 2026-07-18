@@ -1,0 +1,15 @@
+// Letter Combinations of a Phone Number
+// https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+// Solved: 2026-07-17T08:28:31.970Z | Attempts before success: 593
+
+    vector<string> letterCombinations(string digits) {
+        //what if i start mapping : 1->"",2->"abc"
+        vector<string>ans;
+        if(digits.size() == 0) return {};
+        int i=0;
+        string output;
+        vector<string>mapping = {"",    "",    "abc",  "def", "ghi","jkl", "mno", "pqrs", "tuv", "wxyz"};
+        solve(digits,output,i,ans,mapping);
+        return ans;
+    }
+};
