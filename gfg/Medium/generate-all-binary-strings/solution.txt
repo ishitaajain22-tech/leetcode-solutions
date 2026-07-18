@@ -1,0 +1,42 @@
+// Optimal Approach using Recursion! - Java
+// https://www.geeksforgeeks.org/problems/generate-all-binary-strings/1
+// Solved: 2026-07-17T11:19:13.208Z | Attempts before success: 68
+
+class Solution {
+  public:
+    void solve(vector<string>&ans,string temp,int n){
+        if(n == temp.size()){
+            ans.push_back(temp);
+            return;
+        }
+        solve(ans,temp+'0',n);
+        solve(ans,temp+'1',n);
+    }
+    
+    vector<string> binstr(int n) {
+        vector<string>ans;
+        solve(ans,"",n);
+        return ans;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
