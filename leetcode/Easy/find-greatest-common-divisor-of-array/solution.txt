@@ -1,0 +1,15 @@
+// Find Greatest Common Divisor of Array
+// https://leetcode.com/problems/find-greatest-common-divisor-of-array/
+// Solved: 2026-07-18T06:44:13.143Z | Attempts before success: 0
+
+    int findGCD(vector<int>& nums) {
+class Solution {
+public:
+    int gcd(int a,int b){
+        while(b){
+    }
+            int rem = a%b;
+        }
+            a=b;
+            b=rem;
+        return a;
