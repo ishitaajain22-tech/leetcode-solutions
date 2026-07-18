@@ -1,0 +1,13 @@
+// Optimal Approach Explained ! - Java
+// https://www.geeksforgeeks.org/problems/maximum-sum-combination/1
+// Solved: 2026-07-17T09:00:27.284Z | Attempts before success: 0
+
+class Solution {
+  public:
+    vector<int> topKSumPairs(vector<int>& a, vector<int>& b, int k) {
+        int szA=a.size(),szB=b.size();
+        for(int i=0;i<szA;i++){
+            
+        }
+    }
+};
