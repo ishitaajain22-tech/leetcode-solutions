@@ -1,0 +1,15 @@
+// Reverse Linked List II
+// https://leetcode.com/problems/reverse-linked-list-ii/
+// Solved: 2026-07-18T08:03:17.422Z | Attempts before success: 51
+
+    ListNode* reverseL(ListNode* head,ListNode* tail){
+        ListNode* prev = tail->next;
+        ListNode* curr=head;
+        while(prev!=tail){
+            ListNode* next = curr->next;
+            curr->next=prev;
+            prev=curr;
+            curr=next;
+        }
+    }
+        return prev;
