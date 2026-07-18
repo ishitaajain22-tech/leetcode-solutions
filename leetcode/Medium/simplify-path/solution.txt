@@ -1,0 +1,25 @@
+// Simplify Path
+// https://leetcode.com/problems/simplify-path/
+// Solved: 2026-07-17T11:07:58.930Z | Attempts before success: 1967
+
+                }
+
+                curr.clear();
+            }
+            else {
+                curr += path[i];
+            }
+        }
+
+        if (dirs.empty())
+            return "/";
+
+        string ans;
+        for (string &dir : dirs)
+            ans += "/" + dir;
+                    dirs.push_back(curr);
+                else {
+                }
+                        dirs.pop_back();
+                    if (!dirs.empty())
+                else if (curr == "..") {
