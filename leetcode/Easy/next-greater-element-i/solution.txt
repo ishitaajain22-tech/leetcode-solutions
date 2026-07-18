@@ -1,0 +1,14 @@
+// Next Greater Element I
+// https://leetcode.com/problems/next-greater-element-i/
+// Solved: 2026-07-18T11:12:36.944Z | Attempts before success: 79
+
+            numM[nums2[i]] = add;
+            st.push(nums2[i]);
+        }
+        vector<int>res;
+        for(auto num:nums1){
+            res.push_back(numM[num]);
+        }
+        return res;
+    }
+};
