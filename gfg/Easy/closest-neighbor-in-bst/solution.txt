@@ -1,0 +1,37 @@
+// Easy
+// https://www.geeksforgeeks.org/problems/closest-neighbor-in-bst/1
+// Solved: 2026-07-22T05:20:57.854Z | Attempts before success: 15
+
+/*
+Definition for Node
+class Node {
+  public:
+    int data;
+    Node *left;
+    Node *right;
+
+    Node(int val) {
+        data = val;
+        left = right = nullptr;
+    }
+}; */
+
+class Solution {
+  public:
+    int findMaxFork(Node* root, int k) {
+        int flor = -1;
+        while(root){
+            if(root->data == k){
+                return root->data;
+            }
+            
+            if(k>root->data){
+                flor=root->data;
+                root=root->right;
+            }else{
+                root=root->left;
+            }
+        }
+        return flor;
+    }
+};
