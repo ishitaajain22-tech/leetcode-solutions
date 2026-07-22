@@ -1,0 +1,15 @@
+// Smallest Subsequence of Distinct Characters
+// https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/
+// Solved: 2026-07-19T17:23:21.564Z | Attempts before success: 686
+
+            while(!st.empty() && st.top()>c && last[st.top()-'a']>i){
+            if(vis[c-'a']) continue;
+
+            char c=s[i];
+        for(int i=0;i<s.size();i++){
+        stack<char>st;
+        }
+                vis[st.top()-'a']=false;
+                st.pop();
+            }
+            st.push(c);
