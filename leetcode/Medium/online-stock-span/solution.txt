@@ -1,0 +1,15 @@
+// Online Stock Span
+// https://leetcode.com/problems/online-stock-span/
+// Solved: 2026-07-21T09:55:11.018Z | Attempts before success: 131
+
+            span+=st.top().second;
+            st.pop();
+        while(!st.empty() && st.top().first <= price){
+        int span=1;
+        }
+        st.push({price,span});
+    }
+};
+
+/**
+        return st.top().second;
