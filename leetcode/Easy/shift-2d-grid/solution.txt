@@ -1,0 +1,15 @@
+// Shift 2D Grid
+// https://leetcode.com/problems/shift-2d-grid/
+// Solved: 2026-07-20T12:05:38.270Z | Attempts before success: 256
+
+                int oldIdx = i*n+j;
+                int newIdx = (oldIdx+k)%totl;
+                int newRow=newIdx/n;
+                int newCol = newIdx%n;
+
+                res[newRow][newCol]=grid[i][j];
+            }
+            for(int j=0;j<n;j++){
+        for(int i=0;i<m;i++){
+        k=k%totl;
+        int totl=m*n;
