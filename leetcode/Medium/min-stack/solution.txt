@@ -1,0 +1,14 @@
+// Min Stack
+// https://leetcode.com/problems/min-stack/
+// Solved: 2026-07-19T15:47:10.980Z | Attempts before success: 0
+
+class MinStack {
+public:
+    stack<long long> s; long long minEle;
+    
+    void push(int val) {
+        if (s.empty()) { s.push(val); minEle = val; }
+        else if (val < minEle) { s.push(2LL*val - minEle); minEle = val; }
+        else s.push(val);
+    }
+    
