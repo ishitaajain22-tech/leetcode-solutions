@@ -1,0 +1,14 @@
+// Implement Queue using Stacks
+// https://leetcode.com/problems/implement-queue-using-stacks/
+// Solved: 2026-07-20T11:15:44.578Z | Attempts before success: 97
+
+            s1.pop();
+            s2.push(s1.top());
+        while(!s1.empty()){
+    void push(int x) {
+    
+    stack<int>s2;
+    MyQueue() {}
+    stack<int>s1;
+class MyQueue {
+public:
