@@ -1,0 +1,15 @@
+// Evaluate Reverse Polish Notation
+// https://leetcode.com/problems/evaluate-reverse-polish-notation/
+// Solved: 2026-07-20T07:48:05.253Z | Attempts before success: 252
+
+                st.push(a*b);
+            }else if(tokens[i] == "/"){
+                int a=st.top();st.pop();
+                int b=st.top();st.pop();
+                st.push(b/a);
+            }else{
+                st.push(stoi(tokens[i]));
+            }
+        }
+        return st.top();
+    }
