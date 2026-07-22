@@ -1,0 +1,10 @@
+// Next Greater Element II
+// https://leetcode.com/problems/next-greater-element-ii/
+// Solved: 2026-07-21T11:10:25.634Z | Attempts before success: 355
+
+            }
+            st.push(nums[i%n]);
+        }
+        return res;
+    }
+};
